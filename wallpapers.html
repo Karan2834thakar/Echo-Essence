@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpapers</title>
+
+    <style>
+        #backgroundVideo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            /* Set it behind the page content */
+            object-fit: cover;
+            /* Ensure the video covers the whole page */
+            display: none;
+            opacity: 60%;
+            /* Initially hidden */
+        }
+
+        /* Ensuring the content remains above the video */
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+        }
+
+        .item {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .wallpapers-list {
+            margin: 0 auto;
+        }
+
+        .box {
+            border: 3px solid #825757;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border-radius: 9px;
+            background-color: #e3dbdb;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+            background-color: #391402bc;
+        }
+
+        .box img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 5px;
+            padding: 6px 10px;
+            border: none;
+            background-color: #391402bc;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e1b5b5;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <video id="backgroundVideo" autoplay muted loop playsinline>
+        <source src="b.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+    <header>
+        <div class="container">
+            <h1>Wallpapers</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ringtones.html">Ringtones</a></li>
+                    <li><a href="wallpapers.html">Wallpapers</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <div class="container">
+            <h2>Available Wallpapers</h2>
+            <div class="wallpapers-list">
+
+                <div class="item">
+                    <div class="box">
+                        <img src="images/01.jpg" alt="Wallpaper 1">
+                        <a href="images/01.jpg" download="images/01.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+
+                    <div class="box">
+                        <img src="images/07.jpg" alt="Wallpaper 1">
+                        <a href="images/07.jpg" download="images/07.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/08.jpg" alt="Wallpaper 1">
+                        <a href="images/08.jpg" download="images/08.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/09.jpg" alt="Wallpaper 1">
+                        <a href="images/09.jpg" download="images/09.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/10.jpg" alt="Wallpaper 1">
+                        <a href="images/10.jpg" download="images/10.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/11.jpg" alt="Wallpaper 1">
+                        <a href="images/11.jpg" download="images/11.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/12.jpg" alt="Wallpaper 1">
+                        <a href="images/12.jpg" download="images/12.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/13.jpg" alt="Wallpaper 1">
+                        <a href="images/13.jpg" download="images/13.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/14.jpg" alt="Wallpaper 1">
+                        <a href="images/14.jpg" download="images/14.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/15.jpg" alt="Wallpaper 1">
+                        <a href="images/15.jpg" download="images/15.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/16.jpg" alt="Wallpaper 1">
+                        <a href="images/16.jpg" download="images/16.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/17.jpg" alt="Wallpaper 1">
+                        <a href="images/17.jpg" download="images/17.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/18.jpg" alt="Wallpaper 1">
+                        <a href="images/18.jpg" download="images/18.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/19.jpg" alt="Wallpaper 1">
+                        <a href="images/19.jpg" download="images/19.jpg""><br/><button id=" dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/20.jpg" alt="Wallpaper 1">
+                        <a href="images/20.jpg" download="images/20.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/21.jpg" alt="Wallpaper 1">
+                        <a href="images/21.jpg" download="images/21.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/22.jpg" alt="Wallpaper 1">
+                        <a href="images/22.jpg" download="images/22.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/23.jpg" alt="Wallpaper 1">
+                        <a href="images/23.jpg" download="images/23.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/24.jpg" alt="Wallpaper 1">
+                        <a href="images/24.jpg" download="images/24.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/25.jpg" alt="Wallpaper 1">
+                        <a href="images/25.jpg" download="images/25.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/02.jpg" alt="Wallpaper 1">
+                        <a href="images/02.jpg" download="images/02.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/03.jpg" alt="Wallpaper 1">
+                        <a href="images/03.jpg" download="images/03.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/04.jpg" alt="Wallpaper 1">
+                        <a href="images/04.jpg" download="images/04.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/05.jpg" alt="Wallpaper 1">
+                        <a href="images/05.jpg" download="images/05.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/26.jpg" alt="Wallpaper 1">
+                        <a href="images/26.jpg" download="images/26.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/27.jpg" alt="Wallpaper 1">
+                        <a href="images/27.jpg" download="images/27.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/28.jpg" alt="Wallpaper 1">
+                        <a href="images/28.jpg" download="images/28.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/29.jpg" alt="Wallpaper 1">
+                        <a href="images/29.jpg" download="images/29.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/30.jpg" alt="Wallpaper 1">
+                        <a href="images/30.jpg" download="images/30.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/31.jpg" alt="Wallpaper 1">
+                        <a href="images/31.jpg" download="images/31.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/32.jpg" alt="Wallpaper 1">
+                        <a href="images/32.jpg" download="images/32.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/33.jpg" alt="Wallpaper 1">
+                        <a href="images/33.jpg" download="images/33.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/34.jpg" alt="Wallpaper 1">
+                        <a href="images/34.jpg" download="wallpaper1.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/35.jpg" alt="Wallpaper 1">
+                        <a href="images/35.jpg" download="images/35.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/36.jpg" alt="Wallpaper 1">
+                        <a href="images/36.jpg" download="images/36.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/37.jpg" alt="Wallpaper 1">
+                        <a href="images/37.jpg" download="images/37.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/38.jpg" alt="Wallpaper 1">
+                        <a href="images/38.jpg" download="wallpaper1.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/39.jpg" alt="Wallpaper 1">
+                        <a href="images/39.jpg" download="images/39.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/40.jpg" alt="Wallpaper 1">
+                        <a href="images/40.jpg" download="images/40.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/41.jpg" alt="Wallpaper 1">
+                        <a href="images/41.jpg" download="images/41.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+                    <div class="box">
+                        <img src="images/42.jpg" alt="Wallpaper 1">
+                        <a href="images/42.jpg" download="images/42.jpg"><br /><button id="dow">Download</button></a>
+                    </div>
+
+                </div>
+                <!-- Add more wallpapers -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ringtones and Wallpapers. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const backgroundVideo = document.getElementById("backgroundVideo");
+        const downloadBtns = document.querySelectorAll("a[download]"); // Target only download links
+    
+        downloadBtns.forEach((downloadBtn) => {
+            downloadBtn.addEventListener("click", () => {
+                // Reset the video to the beginning and show it
+                backgroundVideo.currentTime = 0;
+                backgroundVideo.style.display = "block";
+                backgroundVideo.play().catch((err) => {
+                    console.error("Video play failed:", err);
+                });
+    
+                // Stop the video and hide it after a short delay
+                setTimeout(() => {
+                    backgroundVideo.pause();
+                    backgroundVideo.style.display = "none";
+                }, 3000); // 3-second delay
+            });
+        });
+    </script>
+    
+</body>
+
+</html>
