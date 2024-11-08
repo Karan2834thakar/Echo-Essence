@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+
+        body {
+            overflow-x: hidden;
+            box-sizing: border-box;
+            background-color: #512b2b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #logo {
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        .icontainer {
+            margin: 2%;
+            background-color: #e3dbdb;
+            border: none;
+            border-radius: 7px;
+        }
+
+        #myform {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 250px;
+            flex-direction: column;
+            padding: 30px;
+            color: rgb(95, 69, 69);
+        }
+
+        .head {
+            margin: 0px 0 10px 0;
+            font-size: 30px;
+            font-weight: 600;
+            color: rgb(131, 93, 93);
+        }
+
+        #email,
+        #password {
+            margin: 0px 10px 0px 10px;
+            border-radius: 25px;
+            border: none;
+            padding: 0px 10px 0px 20px;
+            height: 30px;
+        }
+
+        #btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0px 10px 0px 10px;
+            border-radius: 25px;
+            border: none;
+            padding: 20px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Add this after the features section -->
+    <section id="login" class="login-section">
+        <div class="container">
+            <h2>Login to Download More Content</h2>
+            <p>Access exclusive ringtones and wallpapers by logging in with your Google account.</p>
+
+            <div class="icontainer">
+                <form id="myform">
+                    <div class="head">Register</div>
+                    <input id="email" type="email" placeholder="email" />
+                    <input id="password" type="password" placeholder="password" />
+                    <button type="button" id="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let btn = document.getElementById("btn");
+        const email = document.querySelector("#email");
+        const password = document.querySelector("#password");
+
+        btn.addEventListener("click", async () => {
+            let user = { email: email.value, password: password.value };
+            
+
+            let r = await fetch("http://localhost:3000", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(user),
+            });
+        });
+        btn.addEventListener("click", () => {
+            setTimeout(() => {
+                window.location.replace("http://127.0.0.1:5500/ringtones_and_wallpapers/index.html");
+            }, 3000)
+        })
+    </script>
+</body>
+
+</html>
