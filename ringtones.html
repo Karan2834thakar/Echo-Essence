@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ringtones</title>
+
+    <style>
+        /* Style for background video */
+        #backgroundVideo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            /* Set it behind the page content */
+            object-fit: cover;
+            /* Ensure the video covers the whole page */
+            display: none;
+            /* Initially hidden */
+        }
+
+        /* Ensuring the content remains above the video */
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .box {
+            border: 3px solid #825757;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 350px;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 9px;
+            background-color: #e3dbdb;
+            transition-duration: .3s;
+        }
+
+        .box:hover {
+            scale: 1.07;
+            background-color: #391402bc;
+        }
+
+        audio {
+            margin-bottom: 10px;
+        }
+
+        .item {
+            display: list-item;
+            grid-template-columns: 1fr 1fr;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <video id="backgroundVideo" autoplay muted loop playsinline>
+        <source src="vecteezy_music-notes-flowing-hanging-on-strings-and-falling-from-the_1804963.mp4"
+            type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+    <header>
+        <div class="container">
+            <h1>Ringtones</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ringtones.html">Ringtones</a></li>
+                    <li><a href="wallpapers.html">Wallpapers</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <div class="container">
+            <h2>Available Ringtones</h2>
+            <div class="ringtones-list">
+                <div class="item">
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/Aya Nakamura - Djadja (Marimba Remix) (1).mp3" type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="ringtoness/Aya Nakamura - Djadja (Marimba Remix) (1).mp3"
+                            download="ringtoness/Aya Nakamura - Djadja (Marimba Remix) (1).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/1.mp3.mp3" type="audio/mpeg" />
+                        </audio><a href="ringtoness/1.mp3.mp3" download="ringtoness/1.mp3.mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/BLACKPINK -BOOMBAYAH (Marimba Remix) (1).mp3" type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/BLACKPINK -BOOMBAYAH (Marimba Remix) (1).mp3"
+                            download="ringtoness/BLACKPINK -BOOMBAYAH (Marimba Remix) (1).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/BLACKPINK DDU-DU DDU-DU_M (Marimba Remix) (1).mp3"
+                                type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/BLACKPINK DDU-DU DDU-DU_M (Marimba Remix) (1).mp3"
+                            download="ringtoness/BLACKPINK DDU-DU DDU-DU_M (Marimba Remix) (1).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/Bruno Mars - That’s What I Like (Marimba Remix) (1).mp3"
+                                type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/Bruno Mars - That’s What I Like (Marimba Remix) (1).mp3"
+                            download="ringtoness/Bruno Mars - That’s What I Like (Marimba Remix) (1).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/BTS- DNA (Marimba Remix) (1).mp3" type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/BTS- DNA (Marimba Remix) (1).mp3"
+                            download="ringtoness/BTS- DNA (Marimba Remix) (1).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/Burak Yeter - Tuesday ft. Danelle Sandoval (Marimba Remix) (1).mp3"
+                                type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/Burak Yeter - Tuesday ft. Danelle Sandoval (Marimba Remix) (1).mp3"
+                            download="ringtoness/Burak Yeter - Tuesday ft. Danelle Sandoval (Marimba Remix) (1).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/Clean Bandit - Solo (Marimba Remix).mp3" type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/Clean Bandit - Solo (Marimba Remix).mp3"
+                            download="ringtoness/Clean Bandit - Solo (Marimba Remix).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/Coldplay - Adventure Of A Lifetime (Marimba Remix).mp3"
+                                type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/Coldplay - Adventure Of A Lifetime (Marimba Remix).mp3"
+                            download="ringtoness/Coldplay - Adventure Of A Lifetime (Marimba Remix).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/DJ MOIGUS - PHONK BRASILEIRO FRESCO (Marimba Remix).mp3"
+                                type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/DJ MOIGUS - PHONK BRASILEIRO FRESCO (Marimba Remix).mp3"
+                            download="ringtoness/DJ MOIGUS - PHONK BRASILEIRO FRESCO (Marimba Remix).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/Drake - Hotline Bling (Marimba Remix) (1).mp3" type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/Drake - Hotline Bling (Marimba Remix) (1).mp3"
+                            download="ringtoness/Drake - Hotline Bling (Marimba Remix) (1).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/Dua Lipa - Don't Start Now (Marimba Remix).mp3" type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/Dua Lipa - Don't Start Now (Marimba Remix).mp3"
+                            download="ringtoness/Dua Lipa - Don't Start Now (Marimba Remix).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/Dua Lipa - Levitating Featuring DaBaby (Marimba Remix).mp3"
+                                type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/Dua Lipa - Levitating Featuring DaBaby (Marimba Remix).mp3"
+                            download="ringtoness/Dua Lipa - Levitating Featuring DaBaby (Marimba Remix).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/Dylan Scott - Livin' My Best Life (Marimba Remix) (1).mp3"
+                                type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/Dylan Scott - Livin' My Best Life (Marimba Remix) (1).mp3"
+                            download="ringtoness/Dylan Scott - Livin' My Best Life (Marimba Remix) (1).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/Imagine Dragons - Believer (Marimba Remix)  (1).mp3"
+                                type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/Imagine Dragons - Believer (Marimba Remix)  (1).mp3"
+                            download="ringtoness/Imagine Dragons - Believer (Marimba Remix)  (1).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/Jhay_Cortez,_J_Balvin,_Bad_Bunny_No_Me_Conoce_Marimba_Remix.mp3"
+                                type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/Jhay_Cortez,_J_Balvin,_Bad_Bunny_No_Me_Conoce_Marimba_Remix.mp3"
+                            download="ringtoness/Jhay_Cortez,_J_Balvin,_Bad_Bunny_No_Me_Conoce_Marimba_Remix.mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/KAROL G, Nicki Minaj - Tusa (Marimba Remix).mp3"
+                                type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/KAROL G, Nicki Minaj - Tusa (Marimba Remix).mp3"
+                            download="ringtoness/KAROL G, Nicki Minaj - Tusa (Marimba Remix).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/LISA Money (Marimba Remix).mp3" type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/LISA Money (Marimba Remix).mp3"
+                            download="ringtoness/LISA Money (Marimba Remix).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/Luis Fonsi, Demi Lovato - Échame La Culpa (Marimba Remix).mp3"
+                                type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/Luis Fonsi, Demi Lovato - Échame La Culpa (Marimba Remix).mp3"
+                            download="ringtoness/Luis Fonsi, Demi Lovato - Échame La Culpa (Marimba Remix).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/Maluma - Felices los 4 (Marimba Remix).mp3" type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/Maluma - Felices los 4 (Marimba Remix).mp3"
+                            download="ringtoness/Maluma - Felices los 4 (Marimba Remix).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/Maya_Berović_&_Buba_Corelli_Pravo_vreme_Marimba_Remix.mp3"
+                                type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/Maya_Berović_&_Buba_Corelli_Pravo_vreme_Marimba_Remix.mp3"
+                            download="ringtoness/Maya_Berović_&_Buba_Corelli_Pravo_vreme_Marimba_Remix.mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/Montell Jordan - This Is How We Do It (Marimba Remix) .mp3"
+                                type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/Montell Jordan - This Is How We Do It (Marimba Remix) .mp3"
+                            download="ringtoness/Montell Jordan - This Is How We Do It (Marimba Remix) .mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/One Direction - Live While We're Young (Marimba Remix) (1).mp3"
+                                type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/One Direction - Live While We're Young (Marimba Remix) (1).mp3"
+                            download="ringtoness/One Direction - Live While We're Young (Marimba Remix) (1).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/OTYKEN - LEGEND (Marimba Remix).mp3" type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/OTYKEN - LEGEND (Marimba Remix).mp3"
+                            download="ringtoness/OTYKEN - LEGEND (Marimba Remix).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/Pedro Capó, Farruko - Calma (Marimba Remix).mp3"
+                                type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/Pedro Capó, Farruko - Calma (Marimba Remix).mp3"
+                            download="ringtoness/Pedro Capó, Farruko - Calma (Marimba Remix).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/Ricky Martin - Vente Pa' Ca (Marimba Remix)  (1).mp3"
+                                type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/Ricky Martin - Vente Pa' Ca (Marimba Remix)  (1).mp3"
+                            download="ringtoness/Ricky Martin - Vente Pa' Ca (Marimba Remix)  (1).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/Romantic ringtone (Marimba Remix).mp3" type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/Romantic ringtone (Marimba Remix).mp3"
+                            download="ringtoness/Romantic ringtone (Marimba Remix).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/Sub Urban - Cradles (Marimba Remix)  (1).mp3" type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/Sub Urban - Cradles (Marimba Remix)  (1).mp3"
+                            download="ringtoness/Sub Urban - Cradles (Marimba Remix)  (1).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/The Chainsmokers - Don't Let Me Down (Marimba Remix).mp3"
+                                type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/The Chainsmokers - Don't Let Me Down (Marimba Remix).mp3"
+                            download="ringtoness/The Chainsmokers - Don't Let Me Down (Marimba Remix).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/will_i_am_Scream_&_Shout_ft_Britney_Spears_Marimba_Remix (1).mp3"
+                                type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/will_i_am_Scream_&_Shout_ft_Britney_Spears_Marimba_Remix (1).mp3"
+                            download="ringtoness/will_i_am_Scream_&_Shout_ft_Britney_Spears_Marimba_Remix (1).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/Wisin - Adrenalina (Marimba Remix) (1).mp3" type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/Wisin - Adrenalina (Marimba Remix) (1).mp3"
+                            download="ringtoness/Wisin - Adrenalina (Marimba Remix) (1).mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/2.mp3.mp3" type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio><a href="ringtoness/2.mp3.mp3" download="ringtoness/2.mp3.mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/3.mp3.mp3" type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="ringtoness/3.mp3.mp3" download="ringtoness/3.mp3.mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/4.mp3.mp3" type="audio/mpeg" />
+                        </audio><a href="ringtoness/4.mp3.mp3" download="ringtoness/4.mp3.mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                    <div class="box">
+                        <audio id="audio" controls>
+                            <source src="ringtoness/5.mp3.mp3" type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio>
+                        <a href="ringtoness/5.mp3.mp3" download="ringtoness/5.mp3.mp3">
+                            <img src="images/Download-Button-Logo-Background-PNG-Image.png" alt="Download"
+                                class="download-icon" /></a>
+                    </div>
+                </div>
+                <!-- Add more ringtones -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ringtones and Wallpapers. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const backgroundVideo = document.getElementById("backgroundVideo");
+
+        // Get all audio elements
+        const audioPlayers = document.querySelectorAll("audio");
+
+        // Show and play the background video when any audio plays
+        audioPlayers.forEach((audioPlayer) => {
+            audioPlayer.addEventListener("play", () => {
+                // Pause all other audio players
+                audioPlayers.forEach((otherAudio) => {
+                    if (otherAudio !== audioPlayer) {
+                        otherAudio.pause(); // Pause the other audio
+                        otherAudio.currentTime = 0; // Reset the other audio's time if you want to start from the beginning next time
+                    }
+                });
+
+                // Show the video
+                backgroundVideo.style.display = "block";
+                backgroundVideo.play().catch((err) => {
+                    console.error("Video play failed:", err);
+                });
+            });
+
+            // Pause the background video when any audio is paused
+            audioPlayer.addEventListener("pause", () => {
+                // Check if any audio is playing
+                const anyAudioPlaying = Array.from(audioPlayers).some(
+                    (a) => !a.paused
+                );
+                if (!anyAudioPlaying) {
+                    backgroundVideo.pause(); // Pause the video if no audio is playing
+                    backgroundVideo.style.display = "none"; // Hide the video
+                }
+            });
+
+            // Hide the background video when audio ends
+            audioPlayer.addEventListener("ended", () => {
+                backgroundVideo.pause(); // Pause the video
+                backgroundVideo.style.display = "none"; // Hide the video
+            });
+        });
+    </script>
+</body>
+
+</html>
